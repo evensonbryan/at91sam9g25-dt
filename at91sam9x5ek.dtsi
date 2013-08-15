@@ -9,7 +9,7 @@
 /include/ "at91sam9x5cm.dtsi"
 
 / {
-  model = "Atmel AT91SAM9X5-EK";
+	model = "Atmel AT91SAM9X5-EK";
 	compatible = "atmel,at91sam9x5ek", "atmel,at91sam9x5", "atmel,at91sam9";
 
 	chosen {
@@ -45,6 +45,8 @@
 					compatible = "adi,ad5446";
 					reg = <0>;
 					spi-max-frequency = <1000000>;
+					spi-cpha=<1>;
+					spi-cpol=<1>;
 					vcc-supply = <&dac_vcc>;
 				};
 			};

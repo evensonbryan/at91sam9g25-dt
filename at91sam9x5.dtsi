@@ -12,7 +12,7 @@
 /include/ "skeleton.dtsi"
 
 / {
-  model = "Atmel AT91SAM9x5 family SoC";
+	model = "Atmel AT91SAM9x5 family SoC";
 	compatible = "atmel,at91sam9x5";
 	interrupt-parent = <&aic>;
 
